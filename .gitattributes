@@ -1,0 +1,16 @@
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.sh text eol=lf
+*.png binary
+*.jpg binary
+*.webp binary
+*.docx binary
+*.pptx binary
+*.xlsx binary
+# Preserve source bytes so inventory checksums match on every platform.
+skills/** -text
+plugins/** -text
