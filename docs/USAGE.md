@@ -30,6 +30,7 @@ The YAML files indexed in [AGENTS.md](AGENTS.md) are skill interface metadata. T
 
 ```powershell
 python scripts/snapshot.py --snapshot-date YYYY-MM-DD
+python scripts/catalog_images.py
 python scripts/verify.py
 git diff --stat
 git diff -- docs inventory.json
@@ -38,5 +39,7 @@ git diff -- docs inventory.json
 The importer reads the current user's `.codex/skills` directory and versioned `openai-curated-remote` plugin cache. Override the source with `--codex-home PATH` if needed. It copies only skill packages and supporting plugin resource directories, then regenerates both indexes and the manifest.
 
 The importer refuses to replace files whose contents differ. Review changed packages explicitly before importing an update; new plugin versions can coexist with older snapshots. It does not remove existing packages automatically.
+
+The image catalog indexes original package images without moving them. Repository artwork, generation prompts, and provenance live under `assets/images/`. When skill counts change, update the overview artwork and its documentation as well; verification checks its checksum and inventory counts.
 
 Before committing a refresh, review new files for credentials, personal data, large generated assets, and applicable source terms. Preserve bundled licenses and original package structure.

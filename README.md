@@ -1,5 +1,7 @@
 # My Skills & Agents
 
+![Blue-and-white overview of 34 skills across Creative, Core tools, Sites, ChatGPT Pets, Plugin management, and Document templates, with 28 agent interfaces](assets/images/generated/skills-overview-blue-white-v1.png)
+
 A versioned archive of my installed Codex skills, supporting resources, and skill agent interfaces. It brings custom workflows, built-in skills, and cached plugin skills into one documented collection.
 
 **[Browse skills](docs/CATALOG.md)** · **[Browse agent interfaces](docs/AGENTS.md)** · **[Installation and maintenance](docs/USAGE.md)** · **[Source and license notes](THIRD_PARTY_NOTICES.md)**
@@ -7,6 +9,9 @@ A versioned archive of my installed Codex skills, supporting resources, and skil
 ## Repository layout
 
 ```text
+assets/images/
+  generated/              Blue-and-white repository overview
+  prompts/                Original generation and correction prompts
 skills/
   custom/                 Personal skill packages
   system/                 Built-in skill snapshots
@@ -16,6 +21,7 @@ docs/
   CATALOG.md              Complete skill directory
   AGENTS.md               Agent interface directory
   USAGE.md                Installation and maintenance guide
+  IMAGES.md               Image references, previews, and provenance
 scripts/
   snapshot.py             Import installed packages and generate indexes
   verify.py               Verify archive files against SHA-256 checksums
@@ -24,10 +30,18 @@ inventory.json            Source provenance, catalog, and file checksums
 
 ## What's included
 
-- **Custom:** dark technical artwork and Remotion B-roll workflows.
-- **System:** image generation, OpenAI documentation, skill creation, skill installation, and code review.
-- **Plugins:** Sites, ChatGPT Pets, plugin management, and OpenAI document templates.
-- **Agent interfaces:** original `agents/openai.yaml` files retained alongside their skills.
+| Skill group | Count | Skills |
+| --- | ---: | --- |
+| Creative | 1 | `dark-tech-cover` |
+| Core tools | 5 | `imagegen`, `openai-docs`, `skill-creator`, `skill-installer`, `review-agent` |
+| Sites | 4 | `sites-building`, `sites-hosting`, `sites-mcp`, `sites-preview-troubleshooting` |
+| ChatGPT Pets | 3 | `create-pet`, `pets`, `update-pet` |
+| Plugin management | 1 | `plugin-management` |
+| Document templates | 20 | Analytics Dashboard, Business Review, Design Report, Experiment Analysis, Financial Budget, Investment Committee Memo, Legal Memorandum, Market Trends Report, Minimal Letterhead, Operating Calendar, Operating Review, Project Kickoff, Project Tracker, Sales Pipeline, Simple Dark Mode, Simple Light Mode, Strategy Memorandum, System Design, Team Alignment, Three Statement Forecast |
+
+**Total: 34 skills and 28 agent interfaces.** Original `agents/openai.yaml` files accompany their skill packages. The [complete catalog](docs/CATALOG.md) links every skill to its instructions.
+
+See the [image reference library](docs/IMAGES.md) for the overview artwork, original creative reference, template previews, and package icons. Generated repository artwork lives under `assets/images/`; upstream skill images stay next to their packages so their original references remain valid.
 
 The catalog includes cached packages that may not be enabled in a particular session. No standalone custom agent configurations were found during this snapshot. Plugin skills may require their original connectors and runtime tools; this archive does not provide those services.
 

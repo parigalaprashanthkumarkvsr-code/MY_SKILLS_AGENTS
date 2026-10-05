@@ -25,6 +25,18 @@ for item in inventory["files"]:
 for item in inventory["skills"] + inventory["agent_interfaces"]:
     if item["path"] not in expected:
         errors.append(f"Untracked catalog entry: {item['path']}")
+image_metadata = ROOT / 'assets/images/metadata.json'
+if image_metadata.is_file():
+    artwork = json.loads(image_metadata.read_text(encoding='utf-8'))
+    for key in ('asset', 'generation_prompt', 'correction_prompt'):
+        path = ROOT / artwork[key]
+        if not path.resolve().is_relative_to(ROOT) or not path.is_file():
+            errors.append(f"Missing or unsafe image resource: {artwork[key]}")
+    image = ROOT / artwork['asset']
+    if image.is_file() and hashlib.sha256(image.read_bytes()).hexdigest() != artwork['sha256']:
+        errors.append('Generated overview checksum mismatch')
+    if artwork['skills'] != len(inventory['skills']) or artwork['agent_interfaces'] != len(inventory['agent_interfaces']):
+        errors.append('Overview artwork counts differ from the skill inventory; refresh the image and metadata')
 if args.staged:
     result = subprocess.run(['git', 'cat-file', '--batch'], cwd=ROOT,
                             input=''.join(f":{item['path']}\n" for item in inventory['files']).encode(),

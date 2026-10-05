@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_on": "2026-10-05",
+  "tool": "built-in imagegen",
+  "asset": "assets/images/generated/skills-overview-blue-white-v1.png",
+  "dimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "palette": [
+    "white",
+    "navy blue",
+    "cobalt blue",
+    "ice blue"
+  ],
+  "purpose": "README overview of the six skill groups",
+  "skills": 34,
+  "agent_interfaces": 28,
+  "generation_prompt": "assets/images/prompts/skills-overview-blue-white-v1.txt",
+  "correction_prompt": "assets/images/prompts/skills-overview-blue-white-v1-correction.txt",
+  "sha256": "851c2a46ce0082d8145f0bcb21cbf09ad4ac6fd553f102af17737162a4f507b7"
+}

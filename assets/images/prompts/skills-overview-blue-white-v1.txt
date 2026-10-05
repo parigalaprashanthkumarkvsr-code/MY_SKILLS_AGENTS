@@ -1,0 +1,15 @@
+Use case: infographic-diagram.
+Asset: polished wide GitHub README cover illustration for the repository "MY SKILLS & AGENTS", approximately 16:9 landscape.
+Create a beautiful professional blue-and-white editorial infographic that clearly represents an actual collection of 34 reusable Codex skills and 28 skill agent interfaces. Background white with very pale ice-blue grid accents, generous whitespace. Palette exclusively white and shades of blue: navy typography, cobalt blue accents, ice blue surfaces. Premium dimensional isometric objects, soft shadows, subtle blue gradients, refined technical design. No black backgrounds, purple, green, orange, or rainbow colors.
+Composition: prominent title at top left, small factual subtitle below, then six clearly separated cards in a balanced 3-column by 2-row grid with distinctive blue-and-white dimensional objects illustrating each family. Each card has a clear legible short label and small count, no paragraphs.
+Exact text:
+Title: "MY SKILLS & AGENTS"
+Subtitle: "34 skills · 28 agent interfaces"
+Cards:
+"Creative" / "1 skill": glossy blue image frame with layers and a timeline, representing dark technical artwork and video B-roll.
+"Core tools" / "5 skills": blue code brackets, document, and check shield, representing image generation, documentation, skill creation, installation, and review.
+"Sites" / "4 skills": white-and-blue browser window and cloud upload, representing website building, hosting, MCP, and troubleshooting.
+"ChatGPT Pets" / "3 skills": friendly abstract small blue mascot with sprite frames, representing create, manage, and update.
+"Plugin management" / "1 skill": interlocking blue connector pieces, representing plugin discovery and management.
+"Document templates" / "20 skills": neat blue-and-white document, spreadsheet, and presentation stack with charts, representing business reports and reusable templates.
+Avoid extra logos, invented skill names, random text, watermarks, giant robotic characters, connector lines crossing labels, clutter. Clear hierarchy, crisp professional typography. All six cards equally weighted. The picture is a repository overview, not a software UI screenshot.
